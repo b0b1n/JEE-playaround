@@ -41,7 +41,7 @@ public class HelloWorldFilter extends HttpFilter implements Filter {
 				.map(e -> e.getKey() + " ; " + String.join(", ", e.getValue())).collect(Collectors.joining("\n")));
 		System.out.println(" \t ]");
 		chain.doFilter(request, response);
-		System.out.println(" --> Fnished doFilter for : requequestId= " + request.getRequestId());
+		System.out.println(" --> Finished doFilter for : requequestId= " + request.getRequestId());
 	}
 
 	/**
